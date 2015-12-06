@@ -1,6 +1,9 @@
 function [ G ] = twist( omega, p, theta )
-%TWIST Summary of this function goes here
-%   Detailed explanation goes here
+%TWIST - Long Qian
+%   Calculate the twist matrix from omega, p and theta
+%   omega - the twist axis, 1*3 or 3*1 matrix
+%   p - any point on the twist axis, 3*1 vector
+%   theta - twist angle, in radian
     G = eye(4);
     omega_hat = zeros(3,3);
     omega_hat(1,2) = -omega(3);

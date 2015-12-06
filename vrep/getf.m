@@ -1,6 +1,6 @@
 function [ g ] = getf( id, vrep, h, hrel )
-%GETF Summary of this function goes here
-%   Detailed explanation goes here
+%GETF - Long Qian
+%   Get the frame transformation g from h respect to hrel
     g = eye(4); % initialize the G matrix with identity
     % Get the object orientation with respect to the hrel object
     % simx_opmode_oneshot_wait is used in order to get the exact data

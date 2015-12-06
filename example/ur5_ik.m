@@ -1,4 +1,10 @@
-% The first block of code is from ur5_example.m from Lab 0:
+% ur5_ik.m
+% Author: Long Qian
+% Adapted from Prof. Noah Cowan @Johns Hopkins University
+%% Add path and initialization stuff
+addpath('..');
+addpath('../utils', '../vrep', '../ur5');
+
 vrep=remApi('remoteApi');
 vrep.simxFinish(-1);
 id = vrep.simxStart('127.0.0.1', 19997, true, true, 2000, 5);

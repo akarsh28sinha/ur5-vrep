@@ -1,6 +1,9 @@
 function [ G ] = ur5fwdtwist( theta, i )
-%UR5FWD Summary of this function goes here
-%   Detailed explanation goes here
+%UR5FWDTWIST - Long Qian
+%   Forward kinematics of UR5 using Twist theory
+%   targetJoints - the joint value for 6 joints of UR5
+%   i - not supported here
+%   G - the transformation from base to end
     d1 = 0.089159;
     d2 = 0;
     d3 = 0;

@@ -1,6 +1,7 @@
 function [ G ] = DH( a, alpha, d, theta )
-%DH Summary of this function goes here
-%   Detailed explanation goes here
+%DH - Long Qian
+%   Calculate transformation matrix from DH parameters
+%   DH parameters follow the tranditional definition
     Td = eye(4);
     Td(3,4) = d;
     Ta = eye(4);

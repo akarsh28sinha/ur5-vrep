@@ -1,6 +1,6 @@
 function movef( id, vrep, g, h, hrel )
-%MOVEF Summary of this function goes here
-%   Detailed explanation goes here
+%MOVEF - Long Qian
+%   Move a frame h with respect to hrel, with transformation g
     % Get the rotational matrix from the transformation matrix
     rot_mat = g(1:3, 1:3);
     % Get the position offset from the transformation matrix

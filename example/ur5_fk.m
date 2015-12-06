@@ -1,3 +1,10 @@
+% ur5_fk.m
+% Author: Long Qian
+% Adapted from Prof. Noah Cowan @Johns Hopkins University
+%% Add path and initialization
+addpath('..');
+addpath('../utils', '../vrep', '../ur5');
+
 % The first block of code is from ur5_example.m from Lab 0:
 vrep=remApi('remoteApi');
 vrep.simxFinish(-1);

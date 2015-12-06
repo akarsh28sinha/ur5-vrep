@@ -1,6 +1,10 @@
 function [ theta ] = ur5inv( gd )
-%UR5INV Summary of this function goes here
-%   gd is the desired transformation of joint6
+%UR5INV - Long Qian
+%   Inverse kinematics of UR5
+%   Formulas adapted from Ryan Keating
+%   gd - the desired transformation from base to end
+%   theta - 6*8 matrix, each colum represents one possible solution of
+%   joint angles
     theta = zeros(6, 8);
     d1 = 0.089159;
     d2 = 0;

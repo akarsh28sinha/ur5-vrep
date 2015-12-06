@@ -1,6 +1,8 @@
 function [ G ] = ur5fwdtrans( targetJoints, i )
-%UR5FWDTRANS Summary of this function goes here
-%   Detailed explanation goes here
+%UR5FWDTRANS - Long Qian
+%   Forward kinematics of UR5 using transformation theory
+%   targetJoints specify the joint value for 6 joints of UR5
+%   i specifies the output transformation from joint 0 to joint i
     d1 = 0.089159;
     d2 = 0;
     d3 = 0;
